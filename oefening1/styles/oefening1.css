@@ -5,11 +5,18 @@
 /* JOUW @FONT-FACE CODE HIER */
 @font-face {
   /* regular / 400 */
+  font-family: "Expletus Sans";
+  src:url('https://assets.codepen.io/274456/ExpletusSans-Regular.ttf');
+  font-weight:400;
 
 }
 
 @font-face {
   /* bold / 700 */
+  font-family: "Expletus Sans";
+
+  src:url('https://assets.codepen.io/274456/ExpletusSans-Bold.ttf');
+  font-weight: 700;
 
 }
 
@@ -21,21 +28,21 @@ li:first-of-type {
 
 li:first-of-type h2 {
   /* JOUW CODE HIER */
-  
-
+  font-family: "Expletus Sans", sans-serif;
+  font-size: 2em;
 }
 
 li:first-of-type p {
   /* JOUW CODE HIER */
-  
-
+  font-family: "Expletus Sans", sans-serif;
+  line-height: 1.5em;
 }
 
 /* hiermee selecteer je de eerste letter van de p in het eerste blokje */
 li:first-of-type p::first-letter {
   /* JOUW CODE HIER */
-
-  
+  font-size: 2em;
+  font-weight: bold;
 }
 
 
@@ -48,7 +55,10 @@ li:first-of-type p::first-letter {
 
 /* JOUW @FONT-FACE CODE HIER */
 @font-face {
-  
+  font-family: "Montserrat";
+
+  src:url('https://assets.codepen.io/274456/Montserrat-Thin.ttf');
+  font-weight: 100;
 }
 
 
@@ -74,8 +84,18 @@ li:nth-of-type(2) h2 {
   color:var(--color);
 
   /* JOUW CODE HIER */
-
-  
+  font-family: "Montserrat", sans-serif;
+  font-size: 3em;
+  font-weight: 100;
+  line-height: .9em;
+  text-transform: uppercase;
+  color: var(--color);
+  text-shadow: 0 0 0.25em var(--shadow);
+  text-shadow: 
+    0 0 0.1em var(--shadow),
+    0 0 0.2em var(--shadow),
+    0 0 0.3em var(--shadow)
+    ;
 }
 
 
@@ -88,7 +108,12 @@ li:nth-of-type(2) h2 {
 
 /* JOUW @FONT-FACE CODE HIER */
 @font-face {
-  
+  font-family: "Saira-Condensed";
+
+  src: url('https://assets.codepen.io/274456/Saira_Condensed-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+  font-display: fallback;
 }
 
 li:nth-of-type(3) {
@@ -98,12 +123,22 @@ li:nth-of-type(3) {
   --shadow:rgb(0 0 0 / .75);
 
   /* JOUW CODE HIER */
-  
-
+  display: grid;
+  grid-auto-columns: min-content;
+  place-content: center;
+  text-align: center;
+  background-color: var(--background);
 }
 
 li:nth-of-type(3) h2 {
   /* JOUW CODE HIER */
-
-  
+  margin: 0;
+  transform: skewY(-10deg);
+  font-family: "Saira-Condensed";
+  font-size: 3.5em;
+  line-height: 1em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--color);
+  text-shadow: .1em .1em 0 var(--shadow);  
 }
